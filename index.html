@@ -2,41 +2,114 @@
 <html>
   <head>
     <title>Vivien Khong's Portfolio</title>
+        <!-- external stylesheets first then my own css/index.css -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="description" content="My personal website">
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
-    <nav>
+    <nav id="top">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#connect">Connect</a></li>
       </ul>
     </nav>
     <h1>Vivien Khong</h1>
+    
+    <p class="tagline">
+      E-commerce Entrepreneur & Aspiring Frontend Developer   
+    </p>
+    
+    <p class="hero-intro">
+      Building practical and creative digital solutions through technology, business experience and lifelong learning.
+    </p>
+
+  <div class="about-container">
+
     <img src="images/myPhoto.jpg" alt="A self portrait at a beach wedding">
 
     <section id="about">
       <h2>About</h2>
-      <p>After tackling life as an e-commerce entrepreneur and a homeschool mom, I decided to embark on a new challenge by enrolling in a coding school at <strong>Code the Dream</strong> in March 2026. Since then, I am building skills in JavaScript, HTML and CSS. As a business owner, I embrace technology in every step of the business in order to expedite procedures and processes. It's through the process of learning and using these software tools that sparked an interest in coding and how software and websites work.</p>    
+      <p>After establishing an e-commerce business while homeschooling my family, I decided to pursue a new challenge by enrolling at <strong>Code the Dream</strong> in March 2026. Since then, I have been developing foundational skills in JavaScript, HTML and CSS while gaining a deeper understanding of how websites and software are built. As a business owner, I utilize technology to streamline operations, improve efficiency and support day-to-day business processes. Through working with a variety of digital tools and platforms, I became curious about the systems behind them. This ultimately led me to explore coding and web development more intentionally. </p>    
     </section>
+  </div>
 
     <section id="experience">
       <h2>Experience</h2>
       <ul>
-        <li>Code the Dream Intro to Programming learning JavaScript, HTML and CSS</li>
-        <li>User experience in product sourcing, repricing and inventory software</li>
+        <li>
+
+          <div class="experience-header">
+            <strong>Code the Dream Intro to Programming</strong>
+            <span>March 2026 - Present</span>
+          </div>
+
+          <p>
+          Developing foundational skills in JavaScript, HTML, CSS, Git and GitHub while building a portfolio web project.
+          </p>
+
+        </li>
+        
+        <li>
+
+          <div class="experience-header">
+            <strong>E-Commerce Operations & Technology</strong>
+            <span>August 2020 - Present</span>
+          </div>
+
+          <p>
+          Experience using product sourcing, repricing and inventory management software to support online retail operations and improve workflow efficiency.
+          </p>
+
+        </li>
+
+        <li>
+
+          <div class="experience-header">
+            <strong>Educator</strong>
+            <span>November 1999 - Present</span>
+          </div>
+
+          <p>
+          Researched state requirements and educational resources to develop customized learning plans for diverse learning needs. Curated curriculum and provided individualized instruction to support each student's academic interests, strenghts and learning potential.
+          </p>
+
+        </li>
+      </ul>  
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+    </section>
+      
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
       </ul>  
     </section>
 
     <section id="connect">
       <h2>Connect</h2>  
       <ul>
-        <li><a href="https://github.com/vivienkhongcodes/vivien-khong-intro26.2">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/vivien-khong-21544a321/">LinkedIn</a></li>
+        <li>
+          <a href="https://github.com/vivienkhongcodes/vivien-khong-intro26.2">
+            <i class="fa fa-github"></i>
+          </a>   
+        </li>   
+        
+        <li>
+          <a href="https://www.linkedin.com/in/vivien-khong-21544a321/">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
       </ul>
-
-      <p>Return to homepage</p>
+      <!-- clickable return to top --> 
+      <p><a href="#top">Return to top</a></p>
     </section>
   </body>
 </html>

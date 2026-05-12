@@ -1,0 +1,163 @@
+body {
+    background-color: lightcoral;
+    /* Google font */
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    margin: 24px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: lightcoral;
+    /* padding: vertical horizontal */
+    padding: 12px 0;
+}
+
+nav ul {
+    /* flexbox */
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    padding: 0;
+    justify-content: flex-end;
+    font-size: larger;
+}
+
+img {
+    width: 200px; 
+    /* round borders */    
+    border-radius: 50%; 
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color:#b6dab9;
+}
+
+a:hover {
+    color: darkcyan;
+    letter-spacing: 1px;
+}
+
+/* Return to top link. */
+#connect p a {
+    color: darkcyan;
+}
+
+#connect p a:hover {
+    color: #333;
+}
+
+/* Styles the About and Image sections using class selector .about-container - find the element inside. */
+.about-container {
+
+    /* flex here places Image and About side by side */
+    display: flex;
+    /* controls vertical alighment inside flex row, instead of centered vertically, both Image and About headings start from top edge */
+    align-items: flex-start;
+    /* adds spacing between the Image and About sections */
+    gap: 40px;
+}
+
+/* Find image elements inside .about-container. Align image to About section. */
+.about-container img {
+    margin-top: 0;
+}
+
+/* Style all section About, Experience, Connect elements. */
+section {
+    background-color: rgb(175, 228, 228);
+    /* Add inner space inside sections. */
+    padding: 24px;
+    /* Add outer space between sections. */
+    margin-top: 40px;
+    /* slightly round borders */  
+    border-radius: 12px;
+}
+
+/* About section needs to match image */
+#about {
+    margin-top: 0;
+}
+
+h1 {
+    color: #b6dab9;
+    text-align:center; 
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color:darkcyan;
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 1.2rem;
+    color:white;
+    margin-top: -20px;
+}
+
+.hero-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto 40px auto;
+    /* Rem means root em, scales relative to the browser's base font size. */
+    font-size: 1.1rem;
+    /* Vertical spacing between lines of text. */
+    line-height: 1.6;
+    color: #f8ffff;
+}
+
+/* styled blocks for items in experience */
+#experience ul {
+    list-style: none;
+    padding: 0;
+}
+
+#experience li {
+    background-color: white;
+    border: 2px solid #b6dab9;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+/* Using class selector to change Experience section to include specific titles and dates */
+.experience-header {
+    display: flex;
+    /* Pushes the items to opposite sides. */
+    justify-content: space-between;
+    align-items: center;
+    /* Add space below the title/date row. */
+    margin-bottom: 10px;
+}
+
+/* Make Connect icons using Flexbox */
+#connect ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#connect i {
+    font-size: 20px;
+    color:#333;
+}
+
+#connect i:hover {
+    color: darkcyan;
+}
+
