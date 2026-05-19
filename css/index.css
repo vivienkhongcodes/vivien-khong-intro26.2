@@ -1,7 +1,7 @@
 body {
     background-color: lightcoral;
     /* Google font */
-    font-family: "Montserrat", sans-serif;
+    font-family: "Quicksand", sans-serif;
     color: #333;
     margin: 24px;
 }
@@ -17,7 +17,7 @@ nav {
 nav ul {
     /* flexbox */
     display: flex;
-    gap: 60px;
+    gap: 40px;
     list-style: none;
     padding: 0;
     justify-content: flex-end;
@@ -35,7 +35,8 @@ a {
 }
 
 nav a {
-    color:#b6dab9;
+    color: #5b5f6b;
+    font-weight: 600;
 }
 
 a:hover {
@@ -70,7 +71,7 @@ a:hover {
 
 /* Style all section About, Experience, Connect elements. */
 section {
-    background-color: rgb(175, 228, 228);
+    background-color: #f5ddd3;
     /* Add inner space inside sections. */
     padding: 24px;
     /* Add outer space between sections. */
@@ -85,7 +86,7 @@ section {
 }
 
 h1 {
-    color: #b6dab9;
+    color: #f2d7cd;
     text-align:center; 
     margin-top: 40px;
     margin-bottom: 40px;
@@ -105,7 +106,7 @@ p {
 .tagline {
     text-align: center;
     font-size: 1.2rem;
-    color:white;
+    color: #f5ddd3;
     margin-top: -20px;
 }
 
@@ -117,7 +118,7 @@ p {
     font-size: 1.1rem;
     /* Vertical spacing between lines of text. */
     line-height: 1.6;
-    color: #f8ffff;
+    color: #f2d7cd;
 }
 
 /* styled blocks for items in experience */
@@ -127,11 +128,15 @@ p {
 }
 
 #experience li {
-    background-color: white;
-    border: 2px solid #b6dab9;
+    background-color: #f5ddd3;
+    border: 2px solid #243447;
     border-radius: 12px;
     padding: 16px;
     margin-bottom: 16px;
+}
+
+#experience  strong {
+    color: #5b5f6b;
 }
 
 /* Using class selector to change Experience section to include specific titles and dates */
@@ -153,11 +158,73 @@ p {
 }
 
 #connect i {
-    font-size: 20px;
+    font-size: 40px;
+    margin: 10px;
     color:#333;
 }
 
 #connect i:hover {
     color: darkcyan;
+}
+
+/* style my skills using flexbox and adjust layout of the list of skills */
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    background-color: #fff7e6;
+    border: 2px solid #243447;
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-weight: 600;
+    color: #5b5f6b;
+}
+
+/* outside media query mean default desktop styles */
+
+/* inside media queries are conditional overrides of existing CSS; tablets media query - when screen is 900px or smaller, stack vertically */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        gap: 24px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* phones media query */
+@media (max-width: 600px) {
+
+    body {
+        margin: 12px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+
+    }
+
+    img {
+        width: 160px;
+    }
+
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #skills ul {
+        justify-content: center;
+    }
 }
 
