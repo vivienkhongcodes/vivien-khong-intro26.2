@@ -135,7 +135,7 @@ p {
     margin-bottom: 16px;
 }
 
-#experience  strong {
+#experience strong {
     color: #5b5f6b;
 }
 
@@ -226,5 +226,76 @@ p {
     #skills ul {
         justify-content: center;
     }
+}
+/* form inside Leave a Message section */
+#leave-message form {
+    max-width: 600px;
+}
+
+#leave-message label {
+    /* forces all labels "Name", "Email" and "Message" to take the same width to line up neatly */
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 12px;
+}
+
+/* style all input fields */
+#leave-message input,
+#leave-message textarea {
+    width: 250px;
+    padding: 10px;
+
+    /* space under each field */
+    margin-bottom: 12px;
+
+    /* curved corners */
+    border-radius: 12px;
+
+    /* dark border outlines - thickness, continuous line with a dark navy color */
+    border: 2px solid #243447;
+   
+    /* inside background color */
+    background-color: #fff7e6;
+
+    /* text color inside field */
+    color:#5b5f6b;
+
+}
+
+/* make message box taller */
+#leave-message textarea {
+    height: 190px;
+    vertical-align: top;
+}
+
+#leave-message button,
+.remove-button {
+    /* top/bottom left/right */
+    padding: 10px 20px;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+}
+
+#leave-message button {
+    margin-left: 285px;
+}
+
+.remove-button {
+    margin-left: 12px;
+
+#leave-message button:hover,
+.remove-button:hover {
+    background-color: #246b6b;
+}
+ 
+    /* match Submit button */
+    display: inline-block;
+    
 }
 
