@@ -289,13 +289,11 @@ p {
 .remove-button {
     margin-left: 12px;
 
+    /* match Submit button */
+    display: inline-block;
+}    
+
 #leave-message button:hover,
 .remove-button:hover {
     background-color: #246b6b;
-}
- 
-    /* match Submit button */
-    display: inline-block;
-    
-}
-
+}    
