@@ -94,5 +94,52 @@ messageForm.reset();
 
 });
 
+//Create a variable named projectSection; using "DOM Selection" to select the projects section by id
+const projectSection = document.getElementById("projects");
+
+//Create a variable named projectList; using "DOM Selection" query the projectSection 
+const projectList = projectSection.querySelector("ul");
+
+//use the Fetch API, create a "GET" request to https://api.github.com/users/{GITHUB_USERNAME}/repos where {GITHUB_USERNAME} is your username for your GitHub account;
+fetch('https://api.github.com/users/vivienkhongcodes/repos')
+
+//Chain a then method to the fetch call and pass it a function that returns the response JSON data; 
+.then(response=> response.json())
+
+//Chain another then method and pass it a callback function to parse the response and store it in a variable named repositories;
+.then(repositories => {
+  console.log(repositories);
+
+ //Create a for loop to iterate over your repositories Array, starting at index 0;
+ 
+for (let i = 0; i < repositories.length; i++) {
+    console.log(repositories[i].name);
+
+    const project = document.createElement("li");
+
+    //strech - clickable link to repo
+    const link = document.createElement("a"); //create a link <a></a>
+   
+    link.innerText = repositories[i].name;//puts repo name inside link
+    link.href = repositories[i].html_url;//get repo's name link inside html destination
+    link.target = "_blank";//open in a new browser tab
+    
+    project.appendChild(link);
+
+    //On the next line, append the project element to the projectList element;
+    projectList.appendChild(project);
+
+  }
+})
+
+//Chain a catch() function to your fetch call to handle errors from the server so the user would know what happened if your Projects section was empty;
+.catch(error => {
+  console.log("Error fetching repositories:", error);
+
+});
+
+
 
  
+  
+
