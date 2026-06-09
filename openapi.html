@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Join Me As We Explore Flowers by O'Keeffe at the Art Institute of Chicago</title>
+        
+    <!-- external stylesheets first then my own css/index.css -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="My personal website">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/openapi.css">
+  </head>
+  <body id="top">
+    <nav>
+      <ul>
+        
+        <!-- Navigation back to portfolio -->
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+    <h1>Flowers by O'Keeffe at the Art Institute of Chicago</h1>
+    <p>
+      Come along with me on this virtual museum tour as we explore flower-inspired artworks by American painter and photographer, Georgia O'Keeffe, at the Art Institute of Chicago. Click the buttons below to discover my specially curated artworks to learn about their artistic details through data provided by the museum's public API. 
+    </p>
+    
+    <!-- Give button an id for JavaScript to connect to Art Institute API later -->
+    <button type="button" id="show-artwork-button">Begin Your Exploration of O'Keeffe</button>
+
+    <button type="button" id="okeeffe-search-button">
+      Explore More O'Keeffe Works  
+    </button>
+
+    <div class="Artwork">
+
+    <h2 id="gallery-heading">Artwork Gallery</h2>
+
+    <!-- Artwork cards - my gallery is child 1 - will be inserted here by JavaScript -->    
+    <section id="artwork-cards">
+      
+    </section>
+    
+    <!-- Learn More - artwork details appear here -->
+    <section id="artwork-details">
+      <h2>Artwork Details</h2>
+    </section>
+  </div>
+
+  <!-- connect openapi.js - connect JavaScript file -->
+
+  <script src="js/openapi.js"></script>
+</body>
+</html>
