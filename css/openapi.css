@@ -1,0 +1,187 @@
+/* Possible museum-style background: #f7f1e8 */
+/* css/openapi.css */
+
+/*Will contain styling specifically for:*/
+
+/*museum-style background*/
+/*artwork cards*/
+/*artwork details section*/
+/*buttons*/
+/*O'Keeffe-inspired banner */
+body {
+    background-color: lightcoral;
+}
+
+nav ul {
+    padding-left: 0;    
+}
+
+nav li {
+    list-style: none;
+}
+
+/* Gallery container */
+#artwork-cards {
+    background-color: transparent;
+
+    /* Smaller horizontal padding leaves more room for different screens */
+    padding: 3rem 4rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* Keep gallery centered */
+    justify-content: center;
+
+    /* Cards can have different heights without stretching */
+    align-items: flex-start;
+    gap: 2.1rem;
+    
+}
+
+/* Style frame to hug artwork */
+
+.artwork-card img {
+    width: 325px;
+    max-width: 100%;
+    padding: 0.2rem 1.5rem 1rem 0rem;
+    border: 4px solid #fffdf9;
+    box-sizing: border-box;
+    
+}
+
+/* Styling title and date */
+
+.artwork-card h3,
+.artwork-card p {
+    padding-left: 0.5rem;
+
+}
+
+/* HTML has h2 outside so cards start at child 1 */
+
+/* Stagger cards vertically
+
+.artwork-card:nth-child(1) {
+    margin-top: 0;
+} 
+
+.artwork-card:nth-child(2) {
+    margin: 8rem;    
+
+} 
+
+.artwork-card:nth-child(3) {
+    
+    margin-top: 3rem;
+} 
+
+#artwork-cards {
+    background-color: transparent;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.1rem;
+}
+/* Rule for button to fade and shrink, animate it*/
+
+#show-artwork-button {
+    /* Instruction - make changes smoothly: fade, shrink */
+    transition: opacity 1s, transform 1s;
+}
+
+/* Action - when the body has the class exhibition-started, the button should be invisible */
+body.exhibition-started #show-artwork-button {
+    opacity: 0; 
+    transform: scale(0);
+
+}
+
+#artwork-details h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+}
+
+#artwork-details h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.story {
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* Style artist search results */
+.artwork-card {
+
+    background-color: #fffdf9;
+    border: 2px solid #d8c8b8;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 360px;
+
+}
+
+/* Title of artwork from search results */
+.artwork-card h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+
+}
+
+/* Create style for search-artwork-card*/
+.search-artwork-card {
+    background-color: #fffdf9;
+    border: 8px solid #d8c8b8;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 180px;
+    text-align: center;
+
+    /*6px to the right, 6 px down, blur radius, and black at 15% opacity */
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.search-artwork-card h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.search-artwork-card p {
+    margin: 0.5rem 0 0;
+}
+
+@media (max-width: 700px) {
+
+    #artwork-cards {
+        padding: 1rem;
+    }
+
+    .artwork-card:nth-child(1),
+    .artwork-card:nth-child(2),
+    .artwork-card:nth-child(3) {
+        margin-top: 1rem;
+    }
+
+    .artwork-card img {
+        width: 100%;
+    }    
+
+}
+
+#show-artwork-button,
+#okeeffe-search-button {
+    background-color: #fff7e6;
+    border: 2px solid #243447;
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-weight: 600;
+    color: #5b5f6b;
+    cursor: pointer;
+}

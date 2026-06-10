@@ -24,7 +24,7 @@ nav ul {
     font-size: larger;
 }
 
-img {
+.profile-image {
     width: 200px; 
     /* round borders */    
     border-radius: 50%; 
