@@ -185,6 +185,34 @@ p {
     color: #5b5f6b;
 }
 
+/* styled blocks for items in projects */
+#projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+}
+
+#projects li {
+   background-color: #fff7e6;
+    border: 2px solid #243447;
+    border-radius: 20px;
+    padding: 16px;
+    min-width: 140px;
+    font-weight: 600;
+    color: #5b5f6b;
+}
+
+#projects a{
+    color:#5b5f6b;
+    font-weight: 600;
+}
+
+#projects a:hover {
+    color: darkcyan;
+}
+
 /* outside media query mean default desktop styles */
 
 /* inside media queries are conditional overrides of existing CSS; tablets media query - when screen is 900px or smaller, stack vertically */
