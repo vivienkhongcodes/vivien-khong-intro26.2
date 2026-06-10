@@ -137,12 +137,15 @@ body.exhibition-started #show-artwork-button {
 /* Create style for search-artwork-card*/
 .search-artwork-card {
     background-color: #fffdf9;
-    border: 2pc solid #d8c8b8;
+    border: 8px solid #d8c8b8;
     border-radius: 8px;
     padding: 1rem;
     margin: 1rem;
     width: 180px;
     text-align: center;
+
+    /*6px to the right, 6 px down, blur radius, and black at 15% opacity */
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .search-artwork-card h3 {
