@@ -38,6 +38,13 @@ nav li {
     
 }
 
+/* Have heading occupy its own row */
+#artwork-cards h2 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 /* Style frame to hug artwork */
 
 .artwork-card img {
@@ -184,4 +191,10 @@ body.exhibition-started #show-artwork-button {
     font-weight: 600;
     color: #5b5f6b;
     cursor: pointer;
+}
+
+#gallery-heading {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
