@@ -37,6 +37,8 @@ async function createArtworkCard(artworkId) {
     // Create an empty picture frame
     const image = document.createElement("img");
 
+    image.alt = data.data.title;
+
     // Create a title for the image
     const title = document.createElement("h3");
 

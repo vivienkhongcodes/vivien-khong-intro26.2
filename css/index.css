@@ -152,14 +152,13 @@ p {
 /* Make Connect icons using Flexbox */
 #connect ul {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     list-style: none;
     padding: 0;
 }
 
 #connect i {
     font-size: 40px;
-    margin: 10px;
     color:#333;
 }
 
@@ -325,3 +324,27 @@ p {
 .remove-button:hover {
     background-color: #246b6b;
 }    
+
+/* Style for section class project-highlight because the CSS file is determined by which HTML page loads it. */
+.project-highlight {
+    background-color: #f5ddd3;
+    border: 2px solid #243447;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.project-highlight h3 {
+    font-size: 1.4rem;
+    color: darkcyan;
+    /* Move title neatly to top of the box */
+    margin-top: 0;
+
+    /* Create consistent space between title and the description  */
+    margin-bottom: 10px;
+}
+
+.project-highlight p {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
